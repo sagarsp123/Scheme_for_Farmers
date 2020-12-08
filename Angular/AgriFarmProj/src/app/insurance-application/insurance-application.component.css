@@ -1,0 +1,13 @@
+.item {
+    float:left;
+    padding-left: 50%;
+    padding: 0px 0px 0px 16px !important;
+    border: none;
+    vertical-align: middle;
+    height: 15px;
+    line-height: 40px;
+}
+
+.form1{
+    float:left;
+}

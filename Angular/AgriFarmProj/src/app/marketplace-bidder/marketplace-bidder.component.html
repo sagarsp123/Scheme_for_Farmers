@@ -1,0 +1,71 @@
+<p>marketplace-bidder works!</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<table border="1" width="100%" cellspacing="0" cellpadding>
+    <tr>
+        <th>BiddingID</th>
+        <th>CropType</th>
+        <th>CropName</th>
+        <th>InitalPrce</th>
+        <th>CurrentBidPrice</th>
+        <th>BidCloseTime</th>
+
+
+    </tr>
+    <tr *ngFor="let b of currentbids">
+        <td>{{b.Biddingid}}</td>
+        <td>{{b.CropType}}</td>
+        <td>{{b.CropName}}</td>
+        <td>{{b.InitalPrce}}</td>
+        <td>{{b.CurrentBidPrice}}</td>
+        <td>{{b.BidCloseTime}}</td>
+        <td><button type="button" (click)="gotoauction(b.Biddingid)">Go to Auction</button></td>
+    </tr>
+</table>
+
+
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-md-3 mx-auto my-5" *ngFor="let b of currentbids">
+        <mdb-card>
+          <mdb-card-body>
+            <mdb-card-title>
+              <h4>{{b.CropName}}</h4>
+            </mdb-card-title>
+  
+            <mdb-card-text>
+                <p>{{b.Biddingid}}</p>
+                <p>{{b.CropType}}</p>
+                <p>{{b.CropName}}</p>
+                <p>{{b.InitalPrce}}</p>
+                <p>{{b.CurrentBidPrice}}</p>
+            </mdb-card-text>
+  
+            <button mdbBtn color="primary" (click)="gotoauction(b.Biddingid)">Go to Auction page</button>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </div> -->
+
+
+<!-- <div class="card-deck">
+
+    <div class="card" *ngFor="let b of currentbids" style="align-items: center;">
+        <div class="circle">
+                <h2>{{b.CropName}}</h2>
+                    <br> {{sale.quantity}}Kg</h2></a>
+        </div>
+        <p> <b>Base Price:</b> ₹{{b.InitalPrce}}</p>
+
+        <p><b>Current price:</b>₹{{b.CurrentBidPrice}}</p>
+        <p><b>State:</b>{{sale.state}}</p> 
+        <button type="button" (click)="gotoauction(b.Biddingid)">Go to Auction</button>
+    </div>
+
+</div> -->

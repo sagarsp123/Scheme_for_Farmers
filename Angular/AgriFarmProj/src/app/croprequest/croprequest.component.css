@@ -1,0 +1,19 @@
+.container{    
+    width:45%; 
+    margin-left:50%; 
+    margin-right:15%;
+    height: 100%;
+    font-style: italic;
+    color:grey;
+   
+}
+.wrk
+{
+    margin-top: 5%;
+    width: 100%;
+    background-image: url("/assets/images/cropsell.jpg") ;
+    background-image: 100%;
+    background-repeat: no-repeat, repeat;
+    margin-left:5%; 
+    margin-right:15%;
+}
